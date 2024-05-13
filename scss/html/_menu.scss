@@ -1,0 +1,39 @@
+// estilos para el html de menu
+
+#sticky-menu {
+  display: inline-block;
+  vertical-align: top;
+  position: sticky;
+  top: 0; 
+  z-index: 1000;
+
+  .list-group {
+    .list-group-item {
+      display: inline-block;
+      margin-right: 10px;
+      text-align: center;
+      background-color: #c2d30c;
+      transition: background-color 0.3s ease;
+      border: 1px solid black;
+        
+      &:hover {
+            background: linear-gradient(to right, $color-menu-inicio, $color-menu-final);;
+          
+      }
+    }
+  }
+}
+
+main{
+    h4{
+        font-size:x-large;
+        margin: 25px;
+        border: black;
+    }
+    .imagen_plato{
+      border: 1px solid black;
+    }
+}
+
+
+
