@@ -1,0 +1,88 @@
+.color-principal {
+  background: linear-gradient(to left, #c2d30c, #6bbe0d);
+}
+
+.color-menu {
+  background: linear-gradient(to right, #ecfc07, #07f513);
+}
+
+#sticky-menu {
+  display: inline-block;
+  vertical-align: top;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#sticky-menu .list-group .list-group-item {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #c2d30c;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
+}
+#sticky-menu .list-group .list-group-item:hover {
+  background: linear-gradient(to right, #ecfc07, #07f513);
+}
+
+main h4 {
+  font-size: x-large;
+  margin: 25px;
+  border: black;
+}
+main .imagen_plato {
+  border: 1px solid black;
+}
+
+/* Celulares */
+/*Tablets */
+/* PC */
+body {
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+header {
+  background: linear-gradient(to left, #c2d30c, #6bbe0d);
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+header li {
+  margin-bottom: 13%;
+}
+header .MenuNav {
+  display: flex;
+  justify-content: flex-end;
+}
+header .MenuNav .navbar-nav {
+  display: flex;
+  gap: 15px;
+}
+header .MenuNav .nav-item {
+  margin-right: 5px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+header .MenuNav .nav-item a {
+  display: block;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+header .MenuNav .nav-item:hover a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  background: linear-gradient(to left, #c2d30c, #6bbe0d);
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=main.css.map */
