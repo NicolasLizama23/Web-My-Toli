@@ -1,0 +1,46 @@
+/* propiedad = valor */
+/* alt + shift + a */
+/*  {} alt + 123 */
+
+
+/* Estilos para pantallas con un ancho máximo de 768px */
+@media (max-width: 719px) {
+    body{
+        font-family: "Freeman", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+    .bg-amarillo{
+        background-color: #B2C302;
+    }
+    nav div img{
+        width: 13%;
+    }
+    
+  }
+
+
+
+section img{
+    width: 100%;
+}
+main img{
+    width: 100%;
+}
+main div{
+    margin: 10px;
+}
+header{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.nav-item{
+    margin: 5px;
+}
+footer{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}

@@ -1,0 +1,70 @@
+
+//* Mixin para imagenes de plato inicio
+
+@mixin platos_inicio{
+    box-shadow: 0 8px 8px 0 black;
+    margin-top: 30px;
+}
+
+@mixin titulos{
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 70px;
+        margin: 30px;
+        color: #5e3d24;
+        text-shadow: 0 0 10px #fff9e1, 0 0 15px #a78366, 0 0 25px #a78366, 0 0 35px #a78366, 0 0 45px #a78366, 0 0 50px #a78366, 0 0 55px #a78366; 
+}
+
+
+
+@mixin fontLobster{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin platos_img{
+    img{
+    width: 400px;
+    height: 270px;
+    box-shadow: 0 6px 8px 0 black;
+    }
+}
+
+@mixin img_tablet{
+    width: 400px;
+    box-shadow: 0 8px 8px 0 black;
+    margin-top: 30px;
+}
+
+@mixin infoplatos{
+    .info_platos{
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
+        margin: 15px 0 10px 0;
+        color: rgb(109, 80, 27);
+    }
+}
+
+@mixin titulo_seccion{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin: 40px;
+    color: #5e3d24;
+    text-shadow: 0 0 20px #fff9e1, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 30px #a78366, 0 0 30px #a78366, 0 0 30px #a78366, 0 0 30px #a78366; 
+}
+
+@mixin descripcion{
+    font-size: 28px;
+    font-family: "Plus Jakarta Sans", sans-serif;    
+    font-optical-sizing: auto;    
+    font-weight: 400;    
+    font-style: normal; 
+    text-align: center;
+    margin: 30px 200px 50px 200px;
+}

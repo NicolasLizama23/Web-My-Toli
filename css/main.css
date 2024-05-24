@@ -1,0 +1,829 @@
+@charset "UTF-8";
+.color-principal {
+  background: linear-gradient(to left, #7e634e, #a78366);
+}
+
+.color-menu {
+  background: linear-gradient(to right, #7e634e, #a78366);
+}
+
+#sticky-menu {
+  display: inline-block;
+  vertical-align: top;
+  position: sticky;
+  top: 300px;
+  z-index: 1000;
+  width: 200px;
+  height: 100px;
+  margin-left: 80px;
+  transition: top 1s ease;
+}
+#sticky-menu .list-group .list-group-item {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  color: #000000;
+  text-align: center;
+  background-color: #7e634e;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
+  text-shadow: 2px 0 10px #ffffff;
+  box-shadow: 0 4px 8px 0 black;
+}
+#sticky-menu .list-group .list-group-item:hover {
+  background: linear-gradient(to right, #7e634e, #a78366);
+}
+
+main h1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  margin: 30px;
+  color: #5e3d24;
+  text-shadow: 0 0 10px #fff9e1, 0 0 15px #a78366, 0 0 25px #a78366, 0 0 35px #a78366, 0 0 45px #a78366, 0 0 50px #a78366, 0 0 55px #a78366;
+}
+main h2 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+main .fila {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(7, auto);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+}
+main .titulo_comidas {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin: 40px;
+  color: #5e3d24;
+  text-shadow: 0 0 20px #fff9e1, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 30px #a78366, 0 0 30px #a78366, 0 0 30px #a78366, 0 0 30px #a78366;
+}
+main .menu {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+main .menu img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .pastel_choclo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+main .pastel_choclo img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .pastel_choclo .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .carne_jugo {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+main .carne_jugo img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .carne_jugo .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .cazuela_vacuno {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+main .cazuela_vacuno img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .cazuela_vacuno .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .lasaña_boloñesa {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+main .lasaña_boloñesa img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .lasaña_boloñesa .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .porotos_mazamorra {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+main .porotos_mazamorra img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .porotos_mazamorra .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .porotos_riendas {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+main .porotos_riendas img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .porotos_riendas .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .carbonada {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+main .carbonada img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .carbonada .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .lasaña_vegetariana {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+main .lasaña_vegetariana img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .lasaña_vegetariana .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .pollo_jugo {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+main .pollo_jugo img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .pollo_jugo .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .titulo_empanadas {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin: 40px;
+  color: #5e3d24;
+  text-shadow: 0 0 20px #fff9e1, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 30px #a78366, 0 0 30px #a78366, 0 0 30px #a78366, 0 0 30px #a78366;
+}
+main .pino {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+main .pino img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .pino .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .queso {
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+main .queso img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .queso .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .mechada_queso {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+main .mechada_queso img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .mechada_queso .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .camaron_queso {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+main .camaron_queso img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .camaron_queso .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .napolitana {
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+main .napolitana img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .napolitana .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .champiñon_queso {
+  grid-column: 4/5;
+  grid-row: 6/7;
+}
+main .champiñon_queso img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .champiñon_queso .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .titulo_ensaladas {
+  grid-column: 3/4;
+  grid-row: 7/8;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin: 40px;
+  color: #5e3d24;
+  text-shadow: 0 0 20px #fff9e1, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 30px #a78366, 0 0 30px #a78366, 0 0 30px #a78366, 0 0 30px #a78366;
+}
+main .tomates {
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+main .tomates img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .tomates .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .lechuga {
+  grid-column: 3/4;
+  grid-row: 8/9;
+}
+main .lechuga img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .lechuga .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+main .chilena {
+  grid-column: 4/5;
+  grid-row: 8/9;
+}
+main .chilena img {
+  width: 400px;
+  height: 270px;
+  box-shadow: 0 6px 8px 0 black;
+}
+main .chilena .info_platos {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: 15px 0 10px 0;
+  color: rgb(109, 80, 27);
+}
+
+/* Celulares */
+/*Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    background: #7e634e;
+    margin: 10px 20px 20px 20px;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 black;
+  }
+  header img {
+    width: 15%;
+    height: 15%;
+  }
+  header .MenuNav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header .MenuNav .navbar-nav {
+    display: flex;
+    gap: 20px;
+  }
+  header .MenuNav .nav-item {
+    margin-right: 2px;
+    padding: 0 10px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: #fff9e1;
+    box-shadow: 0 1px 2px 0 black;
+  }
+  header .MenuNav .nav-item a {
+    display: block;
+    padding: 10px;
+    transition: all 0.2s ease;
+  }
+  header .MenuNav .nav-item a h5 {
+    font-size: 15px;
+  }
+  header .MenuNav .nav-item:hover a {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  main h1 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 30px;
+    color: #5e3d24;
+    text-shadow: 0 0 10px #fff9e1, 0 0 15px #a78366, 0 0 25px #a78366, 0 0 35px #a78366, 0 0 45px #a78366, 0 0 50px #a78366, 0 0 55px #a78366;
+  }
+  main .descripcion {
+    font-size: 28px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 30px 200px 50px 200px;
+  }
+  main div.pag_inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 15px;
+    margin: 30px;
+  }
+  main div.pag_inicio h5.texto1_inicio {
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 25px;
+  }
+  main .imagen1_inicio {
+    box-shadow: 0 8px 8px 0 black;
+    width: 450px;
+    margin-top: 45px;
+  }
+  main .uber {
+    color: rgb(9, 122, 9);
+  }
+  main .pedidosya {
+    color: rgb(167, 28, 28);
+  }
+  main .rappi {
+    color: rgb(241, 117, 0);
+  }
+  main h2.platos_fav {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 20px;
+    color: #5e3d24;
+    text-shadow: 0 0 15px #fff9e1, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 30px #a78366, 0 0 45px #a78366, 0 0 50px #a78366;
+  }
+  section div.pag_inicio2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+  }
+  section div.pag_inicio2 .plato1_inicio {
+    grid-column: 1/2;
+    grid-row: 1/1;
+  }
+  section div.pag_inicio2 .img_plato1 {
+    width: 400px;
+    box-shadow: 0 8px 8px 0 black;
+    margin-top: 30px;
+  }
+  section div.pag_inicio2 .texto1_plato {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 22px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-right: 18%;
+  }
+  section div.pag_inicio2 .plato2_inicio {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  section div.pag_inicio2 .img_plato2 {
+    width: 400px;
+    box-shadow: 0 8px 8px 0 black;
+    margin-top: 30px;
+  }
+  section div.pag_inicio2 .texto2_plato {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  section div.pag_inicio2 .plato3_inicio {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  section div.pag_inicio2 .img_plato3 {
+    width: 400px;
+    box-shadow: 0 8px 8px 0 black;
+    margin-top: 30px;
+  }
+  section div.pag_inicio2 .texto3_plato {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  section div.pag_inicio2 h4.tit_pastel {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #5e3d24;
+    text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+  }
+  section div.pag_inicio2 h4.tit_mazamorra {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #5e3d24;
+    text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+  }
+  section div.pag_inicio2 h5.texto2_plato {
+    font-size: 22px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+  section div.pag_inicio2 h4.tit_vacuno {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #5e3d24;
+    text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+  }
+  section div.pag_inicio2 h5.texto3_plato {
+    font-size: 22px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+body {
+  text-align: center;
+  justify-content: center;
+  background: #fff9e1;
+}
+
+header {
+  background: #7e634e;
+  margin: 10px 20px 20px 20px;
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 black;
+}
+header li {
+  margin-bottom: 13%;
+}
+header .MenuNav {
+  display: flex;
+  justify-content: flex-end;
+}
+header .MenuNav .navbar-nav {
+  display: flex;
+  gap: 26px;
+}
+header .MenuNav .nav-item {
+  margin-right: 5px;
+  padding: 0 10px;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: #fff9e1;
+  box-shadow: 0 2px 4px 0 black;
+}
+header .MenuNav .nav-item a {
+  display: block;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+header .MenuNav .nav-item:hover a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+main h1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  margin: 30px;
+  color: #5e3d24;
+  text-shadow: 0 0 10px #fff9e1, 0 0 15px #a78366, 0 0 25px #a78366, 0 0 35px #a78366, 0 0 45px #a78366, 0 0 50px #a78366, 0 0 55px #a78366;
+}
+main .descripcion {
+  font-size: 28px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 30px 200px 50px 200px;
+}
+main div.pag_inicio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 15px;
+  margin: 30px;
+}
+main div.pag_inicio .texto1_inicio {
+  font-size: 25px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 10%;
+}
+main div.pag_inicio .imagen1_inicio {
+  box-shadow: 0 8px 8px 0 black;
+}
+main div.pag_inicio .uber {
+  color: rgb(9, 122, 9);
+}
+main div.pag_inicio .pedidosya {
+  color: rgb(167, 28, 28);
+}
+main div.pag_inicio .rappi {
+  color: rgb(241, 117, 0);
+}
+main h2.platos_fav {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin: 50px;
+  color: #5e3d24;
+  text-shadow: 0 0 15px #fff9e1, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 30px #a78366, 0 0 45px #a78366, 0 0 50px #a78366;
+}
+main .inicio_ses {
+  font-size: 25px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+}
+
+section div.pag_inicio2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 60px;
+}
+section .plato1_inicio {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+section .img_plato1 {
+  box-shadow: 0 8px 8px 0 black;
+  margin-top: 30px;
+}
+section .texto1_plato {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+section .plato2_inicio {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+section .img_plato2 {
+  box-shadow: 0 8px 8px 0 black;
+  margin-top: 30px;
+}
+section .texto2_plato {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+section .plato3_inicio {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+section .img_plato3 {
+  box-shadow: 0 8px 8px 0 black;
+  margin-top: 30px;
+}
+section .texto3_plato {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+section h4.tit_pastel {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-right: 18%;
+  color: #5e3d24;
+  text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+}
+section h5.texto1_plato {
+  font-size: 25px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 18%;
+}
+section h4.tit_mazamorra {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin-top: 80px;
+  margin-left: 10%;
+  color: #5e3d24;
+  text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+}
+section h5.texto2_plato {
+  font-size: 25px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 10%;
+}
+section h4.tit_vacuno {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin-top: 60px;
+  margin-right: 18%;
+  color: #5e3d24;
+  text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+}
+section h5.texto3_plato {
+  font-size: 25px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30px;
+  margin-right: 14%;
+}
+
+footer {
+  background: #7e634e;
+  margin: 30px 20px 10px 20px;
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 black;
+}
+footer div.redes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+footer p {
+  font-size: 15px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #fff9e1;
+}
+
+/*# sourceMappingURL=main.css.map */

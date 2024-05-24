@@ -1,0 +1,17 @@
+// variables
+
+$color-inicial: #7e634e;
+$color-final: #a78366;
+
+.color-principal{
+    background: linear-gradient(to left, $color-inicial, $color-final);
+}
+
+$color-menu-inicio: #7e634e;
+$color-menu-final: #a78366;
+
+.color-menu{
+    background: linear-gradient(to right, $color-menu-inicio, $color-menu-final);
+}
+
+

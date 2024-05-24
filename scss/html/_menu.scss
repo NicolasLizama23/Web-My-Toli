@@ -1,0 +1,202 @@
+// estilos para el html de menu
+
+@import "../utilidades/mixin";
+
+#sticky-menu {
+  display: inline-block;
+  vertical-align: top;
+  position: sticky;
+  top: 300px; 
+  z-index: 1000;
+  width: 200px;
+  height: 100px;
+  margin-left: 80px;
+  transition: top 1s ease;
+
+  .list-group {
+    .list-group-item {
+      font-family: "Lobster", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      display: inline-block;
+      color: #000000; 
+      text-align: center;
+      background-color: #7e634e;
+      transition: background-color 0.3s ease;
+      border: 1px solid black;
+      text-shadow: 2px 0 10px #ffffff;
+      box-shadow: 0 4px 8px 0 black;
+     
+      &:hover {
+            background: linear-gradient(to right, $color-menu-inicio, $color-menu-final);;
+          
+      }
+    }
+  }
+}
+
+main{
+    h1{
+      @include titulos
+    }
+    h2{
+      font-family: "Lobster", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+    }
+    
+    .fila{
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-template-rows: repeat(7, auto);
+      grid-column-gap: 15px;
+      grid-row-gap: 20px;
+      }
+      .titulo_comidas{
+        @include titulo_seccion
+      }
+      .menu{
+        grid-column: 1/1;
+        grid-row: 1/1;
+        @include platos_img
+        
+      }
+      .pastel_choclo{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        @include platos_img;
+        @include infoplatos
+      }
+      .carne_jugo{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        @include platos_img;
+        @include infoplatos
+      }
+      .cazuela_vacuno{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        @include platos_img;
+        @include infoplatos
+      }
+
+
+      .lasaña_boloñesa{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        @include platos_img;
+        @include infoplatos
+      }
+      .porotos_mazamorra{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        @include platos_img;
+        @include infoplatos
+      }
+      .porotos_riendas{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        @include platos_img;
+        @include infoplatos
+      }
+
+      .carbonada{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        @include platos_img;
+        @include infoplatos
+      }
+      .lasaña_vegetariana{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        @include platos_img;
+        @include infoplatos
+      }
+      .pollo_jugo{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        @include platos_img;
+        @include infoplatos
+      }
+
+      .titulo_empanadas{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        @include titulo_seccion
+      }
+
+      .pino{
+        grid-column: 2/3;
+        grid-row: 5/6;
+        @include platos_img;
+        @include infoplatos
+      }
+      .queso{
+        grid-column: 3/4;
+        grid-row: 5/6;
+        @include platos_img;
+        @include infoplatos
+      }
+      .mechada_queso{
+        grid-column: 4/5;
+        grid-row: 5/6;
+        @include platos_img;
+        @include infoplatos
+      }
+
+
+      .camaron_queso{
+        grid-column: 2/3;
+        grid-row: 6/7;
+        @include platos_img;
+        @include infoplatos
+      }
+      .napolitana{
+        grid-column: 3/4;
+        grid-row: 6/7;
+        @include platos_img;
+        @include infoplatos
+      }
+      .champiñon_queso{
+        grid-column: 4/5;
+        grid-row: 6/7;
+        @include platos_img;
+        @include infoplatos
+      }
+
+      .titulo_ensaladas{
+        grid-column: 3/4;
+        grid-row: 7/8;
+        @include titulo_seccion
+      }
+
+      .tomates{
+        grid-column: 2/3;
+        grid-row: 8/9;
+        @include platos_img;
+        @include infoplatos
+      }
+      .lechuga{
+        grid-column: 3/4;
+        grid-row: 8/9;
+        @include platos_img;
+        @include infoplatos
+      }
+      .chilena{
+        grid-column: 4/5;
+        grid-row: 8/9;
+        @include platos_img;
+        @include infoplatos
+      }
+      
+
+      
+  
+  
+  
+}
+
+
+
+

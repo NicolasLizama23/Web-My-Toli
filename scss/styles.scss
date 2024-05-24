@@ -1,0 +1,459 @@
+//linea de comentario para sass
+
+@import "utilidades/variables";
+@import "html/menu";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+/* Celulares */
+@media only screen and (max-width: 600px) {
+    body{
+        header{
+        }
+        main{
+        }
+        footer{           
+        }
+    }
+  }
+  
+/*Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header{
+        background:#7e634e;
+        margin: 10px 20px 20px 20px;
+        padding: 5px;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px 0 black;
+        img{
+            width: 15%;
+            height: 15%;         
+        }
+        
+        .MenuNav{
+            display: flex;
+            justify-content: flex-end;
+            .navbar-nav {
+                display: flex;
+                gap: 20px; 
+            }
+        
+            .nav-item {
+                margin-right: 2px; 
+                padding: 0 10px;
+                overflow: hidden; 
+                border-radius: 30px;
+                background-color: #fff9e1;
+                box-shadow: 0 1px 2px 0 black;
+
+            a {
+                display: block;
+                padding: 10px; 
+                transition: all 0.2s ease; 
+                h5{
+                    font-size: 15px;
+                }
+            }
+
+            &:hover a {
+                padding-left: 13px; 
+                padding-right: 13px; 
+            }
+        
+        }
+    }
+}
+    
+    main{
+        h1{
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            margin: 30px;
+            color: #5e3d24;
+            text-shadow: 0 0 10px #fff9e1, 0 0 15px #a78366, 0 0 25px #a78366, 0 0 35px #a78366, 0 0 45px #a78366, 0 0 50px #a78366, 0 0 55px #a78366; 
+    
+        }
+        .descripcion{
+            @include descripcion
+            
+        }    
+        div.pag_inicio{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 5px;
+            grid-row-gap: 15px;
+            margin: 30px;
+            h5.texto1_inicio{
+                font-size: 20px;
+                font-family: "Plus Jakarta Sans", sans-serif;    
+                font-optical-sizing: auto;    
+                font-weight: 400;        
+                font-style: normal; 
+                text-align: center;
+                margin-top: 0;
+                margin-left: 25px;  
+            }
+            }
+            
+            .imagen1_inicio{
+                box-shadow: 0 8px 8px 0 black;
+                width: 450px;
+                margin-top: 45px;
+            }
+            .uber{
+                color: rgb(9, 122, 9);
+            }
+            .pedidosya{
+                color: rgb(167, 28, 28);
+            }
+            .rappi{
+                color: rgb(241, 117, 0);
+            }
+             
+        h2.platos_fav{
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            margin: 20px;
+            color: #5e3d24;
+            text-shadow: 0 0 15px #fff9e1, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 30px #a78366, 0 0 45px #a78366, 0 0 50px #a78366;
+        }
+    } 
+    section{
+            div.pag_inicio2{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(3, 100px);
+                .plato1_inicio{
+                grid-column: 1/2;
+                grid-row: 1/1;
+            }
+            .img_plato1{
+                @include img_tablet
+            }
+            .texto1_plato{
+                grid-column: 2/3;
+                grid-row: 1/2;               
+                font-size: 22px;
+                font-family: "Plus Jakarta Sans", sans-serif;    
+                font-optical-sizing: auto;    
+                font-weight: 400;    
+                font-style: normal; 
+                text-align: center;
+                margin-right: 18%; 
+            
+            }
+            .plato2_inicio{
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+            .img_plato2{
+                @include img_tablet
+            }
+            .texto2_plato{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .plato3_inicio{
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            .img_plato3{
+                @include img_tablet
+            }
+            .texto3_plato{
+                grid-column: 2/3;
+                grid-row: 3/4;
+            }
+            h4.tit_pastel{
+                font-family: "Lobster", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 40px;     
+                color: #5e3d24;
+                text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+            }
+            
+            h4.tit_mazamorra{
+                font-family: "Lobster", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 40px;
+                color: #5e3d24;
+                text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+            }
+            h5.texto2_plato{
+                font-size: 22px;
+                font-family: "Plus Jakarta Sans", sans-serif;    
+                font-optical-sizing: auto;    
+                font-weight: 400;    
+                font-style: normal; 
+                text-align: center;   
+            }
+            h4.tit_vacuno{
+                font-family: "Lobster", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 40px;
+                color: #5e3d24;
+                text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+            }
+            h5.texto3_plato{
+                font-size: 22px;
+                font-family: "Plus Jakarta Sans", sans-serif;    
+                font-optical-sizing: auto;    
+                font-weight: 400;    
+                font-style: normal;         
+            }
+            }
+            
+            
+        } 
+
+        
+    footer{  
+
+    }
+
+}
+  
+
+
+
+body{
+    text-align: center;
+    justify-content: center;
+    background: #fff9e1;
+}
+
+header{
+    background:#7e634e;
+    margin: 10px 20px 20px 20px;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 black;
+    li{
+        margin-bottom: 13%;
+    }
+    .MenuNav{
+        display: flex;
+        justify-content: flex-end;
+        .navbar-nav {
+            display: flex;
+            gap: 26px; 
+        }
+    
+        .nav-item {
+            margin-right: 5px; 
+            padding: 0 10px;
+            overflow: hidden; 
+            border-radius: 30px;
+            background-color: #fff9e1;
+            box-shadow: 0 2px 4px 0 black;
+
+        a {
+            display: block;
+            padding: 10px; 
+            transition: all 0.2s ease; 
+        }
+
+        &:hover a {
+            padding-left: 10px; 
+            padding-right: 10px; 
+        }
+        
+        }
+    }
+
+}
+
+main{
+    h1{
+        @include titulos
+    }
+    .descripcion{
+        @include descripcion
+        
+    }    
+    div.pag_inicio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 80px;
+        grid-row-gap: 15px;
+        margin: 30px;
+        .texto1_inicio{
+            font-size: 25px;
+            font-family: "Plus Jakarta Sans", sans-serif;    
+            font-optical-sizing: auto;    
+            font-weight: 400;    
+            font-style: normal; 
+            text-align: center;
+            margin-top: 0;
+            margin-left: 10%;  
+        }
+        .imagen1_inicio{
+            box-shadow: 0 8px 8px 0 black;
+        }
+        .uber{
+            color: rgb(9, 122, 9);
+        }
+        .pedidosya{
+            color: rgb(167, 28, 28);
+        }
+        .rappi{
+            color: rgb(241, 117, 0);
+        }
+    }  
+    h2.platos_fav{
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        margin: 50px;
+        color: #5e3d24;
+        text-shadow: 0 0 15px #fff9e1, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 30px #a78366, 0 0 45px #a78366, 0 0 50px #a78366;
+    }
+    
+    .inicio_ses{
+        font-size: 25px;
+        font-family: "Plus Jakarta Sans", sans-serif;  
+        font-weight: 400;   
+            
+    }
+    
+    
+    
+}
+
+section{
+    div.pag_inicio2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 60px;
+    }
+    .plato1_inicio{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img_plato1{
+        @include platos_inicio
+    }
+    .texto1_plato{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .plato2_inicio{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .img_plato2{
+        @include platos_inicio
+    }
+    .texto2_plato{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .plato3_inicio{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .img_plato3{
+        @include platos_inicio
+    }
+    .texto3_plato{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    h4.tit_pastel{
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        margin-top: 50px;
+        margin-right: 18%; 
+        color: #5e3d24;
+        text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+    }
+    h5.texto1_plato{
+           font-size: 25px;
+           font-family: "Plus Jakarta Sans", sans-serif;    
+           font-optical-sizing: auto;    
+           font-weight: 400;    
+           font-style: normal; 
+           text-align: center;     
+           margin-top: 30px;
+           margin-right: 18%; 
+    }
+    h4.tit_mazamorra{
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        margin-top: 80px;
+        margin-left: 10%; 
+        color: #5e3d24;
+        text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+    }
+    h5.texto2_plato{
+        font-size: 25px;
+        font-family: "Plus Jakarta Sans", sans-serif;    
+        font-optical-sizing: auto;    
+        font-weight: 400;    
+        font-style: normal; 
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10%;      
+    }
+    h4.tit_vacuno{
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        margin-top: 60px;
+        margin-right: 18%; 
+        color: #5e3d24;
+        text-shadow: 0 0 15px #fff9e1, 0 0 10px #a78366, 0 0 15px #a78366, 0 0 20px #a78366, 0 0 20px #a78366, 0 0 25px #a78366, 0 0 25px #a78366;
+    }
+    h5.texto3_plato{
+        font-size: 25px;
+        font-family: "Plus Jakarta Sans", sans-serif;    
+        font-optical-sizing: auto;    
+        font-weight: 400;    
+        font-style: normal;  
+        margin-top: 30px;
+        margin-right: 14%;           
+    }
+    
+    }    
+   
+
+
+
+footer{
+    background:#7e634e;
+    margin: 30px 20px 10px 20px;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 black;
+    div.redes{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    p{
+        font-size: 15px;
+        font-family: "Plus Jakarta Sans", sans-serif;    
+        font-optical-sizing: auto;    
+        font-weight: 400;    
+        font-style: normal; 
+        text-align:center;   
+        color: #fff9e1;
+    }
+}
